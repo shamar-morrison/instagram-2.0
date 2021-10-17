@@ -18,11 +18,11 @@ const Stories = () => {
 	if (!users.length) return null;
 
 	return (
-		<ul className="flex bg-white space-x-2 p-6 mt-8 border border-gray-200 rounded-sm">
+		<div className="flex bg-white space-x-2 p-6 mt-8 border border-gray-200 rounded-sm overflow-x-scroll scrollbar-thin scrollbar-thumb-black">
 			{users.map(user => (
 				<Story key={user.id} name={user.name} avatar={user.avatar} />
 			))}
-		</ul>
+		</div>
 	);
 };
 

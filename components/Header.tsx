@@ -50,8 +50,8 @@ const Header: React.FC = () => {
 					<HomeIcon className="navBtn" />
 					<MenuIcon className="h-6 md:hidden cursor-pointer" />
 					<div className="relative navBtn">
-						<PaperAirplaneIcon className="navBtn " />
-						<div className="absolute -top-3 -right-1 text-xs w-5 h-5 bg-red-500 flex items-center rounded-full justify-center animate-pulse text-white">
+						<PaperAirplaneIcon className="navBtn rotate-45" />
+						<div className="absolute -top-2 -right-1 text-xs w-5 h-5 bg-red-500 flex items-center rounded-full justify-center animate-pulse text-white">
 							3
 						</div>
 					</div>

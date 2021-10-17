@@ -4,6 +4,15 @@
 
 @layer components {
 	.navBtn {
-		@apply hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out;
+		@apply hidden h-6 md:inline-flex cursor-pointer hover:scale-110 transition-all duration-150 ease-out;
 	}
-} ;
+	.btn {
+		@apply h-6 hover:scale-110 transition-all cursor-pointer duration-150 ease-out;
+	}
+}
+
+img,
+video {
+	/* max-width: none; */
+	/* transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1); */
+}
