@@ -11,8 +11,8 @@ import { HomeIcon } from '@heroicons/react/solid';
 
 const Header: React.FC = () => {
 	return (
-		<div>
-			<div className="flex justify-between max-w-6xl ">
+		<div className="sticky top-0 bg-white shadow-sm border-b z-50">
+			<div className="flex justify-between max-w-6xl lg:mx-auto mx-5">
 				{/* Logo */}
 				<div className="relative hidden lg:inline-grid w-24 ">
 					<Image
@@ -27,6 +27,7 @@ const Header: React.FC = () => {
 						src="https://links.papareact.com/jjm"
 						layout="fill"
 						className="cursor-pointer"
+						objectFit="contain"
 					/>
 				</div>
 
@@ -45,7 +46,25 @@ const Header: React.FC = () => {
 				</div>
 
 				{/* Icons */}
-				<HomeIcon className="h-10 w-10" />
+				<div className="flex items-center justify-end space-x-4">
+					<HomeIcon className="navBtn" />
+					<MenuIcon className="h-6 md:hidden cursor-pointer" />
+					<div className="relative navBtn">
+						<PaperAirplaneIcon className="navBtn " />
+						<div className="absolute -top-3 -right-1 text-xs w-5 h-5 bg-red-500 flex items-center rounded-full justify-center animate-pulse text-white">
+							3
+						</div>
+					</div>
+					<PlusCircleIcon className="navBtn" />
+					<UserGroupIcon className="navBtn" />
+					<HeartIcon className="navBtn" />
+
+					<img
+						src="https://pbs.twimg.com/profile_images/1449066081864278020/_b5i3jGd_400x400.jpg"
+						alt="profile pic"
+						className="h-10 rounded-full cursor-pointer"
+					/>
+				</div>
 			</div>
 		</div>
 	);
