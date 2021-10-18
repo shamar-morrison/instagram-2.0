@@ -37,7 +37,7 @@ const Post: React.FC<PostInterface> = props => {
 				<div className="flex space-x-4 items-center">
 					<HeartIcon className="btn" />
 					<ChatIcon className="btn" />
-					<PaperAirplaneIcon className="btn" />
+					<PaperAirplaneIcon className="btn rotate-45" />
 				</div>
 				<BookmarkIcon className="btn" />
 			</div>
@@ -48,6 +48,7 @@ const Post: React.FC<PostInterface> = props => {
 				{props.caption}
 			</p>
 
+			{/* Add comment */}
 			<form className="flex items-center p-4">
 				<EmojiHappyIcon className="h-7 cursor-pointer" />
 
