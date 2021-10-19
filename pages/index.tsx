@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 			<Head>
 				<title>Instagram 2.0</title>
 				<meta name="description" content="Instgram clone built with NextJS and Typescript" />
-				<link rel="icon" href="../img/insta-logo.png" />
+				<link rel="icon" href="public/favicon.ico" />
 			</Head>
 
 			<Header />

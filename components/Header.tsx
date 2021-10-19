@@ -40,7 +40,7 @@ const Header: React.FC = () => {
 						<input
 							type="text"
 							placeholder="Search"
-							className="bg-gray-50 block w-full pl-10 sm:text-sm border-gray-300 focus:ring-black focus:border-black rounded-md"
+							className="bg-gray-50 block w-full pl-10 sm:text-sm border-gray-300 focus:ring-black focus:border-black rounded-sm"
 						/>
 					</div>
 				</div>
